@@ -1,44 +1,36 @@
 Token Details
+
 Token Name: CryptoDevToken
-
 Token Symbol: CDT
-
 Decimals: 18
-
 Initial Supply: 1,000,000 CDT
 
 Features:
-
 ERC-20 standard compliant
-
 Mintable (owner only)
-
 Burnable
-
 Ownable with transferable ownership
 
 Deployment Steps (Using Hardhat)
 1. Prerequisites
-Node.js (v16+ recommended)
-
-MetaMask installed
-
-Testnet ETH (get from Sepolia Faucet)
+  Node.js (v16+ recommended)
+  MetaMask installed
+  Testnet ETH (get from Sepolia Faucet)
 
 2. Project Setup
-mkdir custom-erc20
-cd custom-erc20
-npm init -y
-npm install --save-dev hardhat
-npx hardhat
-# Choose "Create a JavaScript project"
-npm install @openzeppelin/contracts @nomicfoundation/hardhat-toolbox dotenv
+  mkdir custom-erc20
+  cd custom-erc20
+  npm init -y
+  npm install --save-dev hardhat
+  npx hardhat
+  # Choose "Create a JavaScript project"
+  npm install @openzeppelin/contracts @nomicfoundation/hardhat-toolbox dotenv
 
 3. Configuration
-Create .env file:
-SEPOLIA_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID
-PRIVATE_KEY=YOUR_METAMASK_PRIVATE_KEY
-ETHERSCAN_API_KEY=YOUR_ETHERSCAN_KEY
+  Create .env file:
+  SEPOLIA_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID
+  PRIVATE_KEY=YOUR_METAMASK_PRIVATE_KEY
+  ETHERSCAN_API_KEY=YOUR_ETHERSCAN_KEY
 
 Update hardhat.config.js:
 require("@nomicfoundation/hardhat-toolbox");
